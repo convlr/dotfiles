@@ -18,12 +18,13 @@ set ignorecase
 set smartcase
 set incsearch
 set hlsearch
+set showmatch
 
 syntax on
 set background=dark
-" set cursorline
-" set termguicolors
-highlight Search cterm=bold ctermbg=blue ctermfg=white " guibg=#FFFF00 guifg=#000000
+set cursorline
+set termguicolors
+highlight Search cterm=bold ctermbg=blue ctermfg=white guibg=#FFFF00 guifg=#000000
 set background=light
 
 set noswapfile
@@ -31,4 +32,6 @@ set nobackup
 set undofile
 set autoread
 
-nnoremap <space> :nohlsearch<CR>
+set laststatus=2
+set showcmd
+
